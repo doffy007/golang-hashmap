@@ -5,9 +5,9 @@ import (
 	"net/http"
 )
 
-// LongURLHandler handles URL shortening.
-// @Summary Shorten a URL
-// @Tags URL Shortener
+// LongURLHandler handles URL longer.
+// @Summary Longer a URL
+// @Tags URL Longerer
 // @Accept json
 // @Produce json
 // @Param req body Request true "URL to be long"
