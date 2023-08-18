@@ -11,7 +11,7 @@ import (
 
 func Register(r *mux.Router, lg *logrus.Logger) {
 
-	r.PathPrefix("/swagger").Handler(httpSwagger.WrapHandler)
+	r.PathPrefix("/docs/*any").Handler(httpSwagger.WrapHandler)
 	controller := controller.NewShortenURLController()
 
 	r.HandleFunc("/short-url", controller.ShortenURLHandler).Methods(http.MethodPost)
