@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "154bea07-8a09-41bc-8f02-0c6c06d15b5e",
+		"name": "Atmatech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28140438"
+	},
+	"item": [
+		{
+			"name": "long-url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"short_url\": \"http://shorten-url-service/short/aBCsa\"}"
+				},
+				"url": "http://localhost:8081/long-url"
+			},
+			"response": []
+		},
+		{
+			"name": "short-url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\": \"https://google.com\"}"
+				},
+				"url": "http://localhost:8081/short-url"
+			},
+			"response": []
+		}
+	]
+}
